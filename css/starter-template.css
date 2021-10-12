@@ -1,0 +1,52 @@
+body {
+  padding-top: 5rem;
+  background-image: url("images\1.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #8f9796;
+  color: white;
+  font-size: 30px;
+}
+
+h1.intro{
+  text-align: center;
+  color: black;
+}
+
+ol{
+  color: black;
+  
+}
+
+a:link {
+  color: mintcream;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: palevioletred;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: maroon;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color:yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#A{
+  text-align: center;
+}
