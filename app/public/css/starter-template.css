@@ -1,8 +1,8 @@
 body {
   padding-top: 5rem;
-  background-image: url("app\public\images\1.jpg");
-  background-repeat: no-repeat, repeat;
-  background-color: #cccccc;
+  background-image: url("../images/1.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -33,4 +33,5 @@ a:active {
 
 #A{
   text-align: center;
+  color: whitesmoke;
 }
