@@ -15,6 +15,7 @@ DROP TABLE IF EXISTS game;
 CREATE TABLE gamee (
     game_number int(10) UNIQUE NOT NULL,
     game_type varchar(10),
+    game_day date(10),
     game_time varchar(10),
     PRIMARY KEY (game_number)
 );
@@ -32,11 +33,13 @@ CREATE TABLE assignment (
     FOREIGN KEY (game_number) REFERENCES game(game_number)
 );
 
-INSERT INTO referee (referee_id, referee_fname, year_published, publisher, pages, MSRP) VALUES 
-  ("The Hobbit", "J. R. R. Tolkien", 1937, "George Allen & Unwin", 310, 15),
-  ("How to Lie with Statistics", "Darrell Huff", 1954, "W. W. Norton & Company", 144, 9),
-  ("The Monk Who Sold His Ferrari", "Robin Sharma", 1996, "Harper Collins Publishers", 198, 10),
-  ("The Immortals of Meluha", "Amish Tripathi", 2010, "Westland Press", 390, 14),
-  ("The 3 Mistakes of My Life", "Chetan Bhagat", 2008, "Rupa Publications", 258, 11);
+INSERT INTO referee (referee_id, referee_fname, referee_age, referee_grade, referee_skill) VALUES 
+  (1, 'Tom', 35, 'AA', 90),
+  (2, 'Alex', 40, 'A1', 85),
+  (3,'Alan',45,'A2',95);
 
--- SELECT * FROM book;
+INSERT INTO game (game_number,game_type,game_day,game_time) VALUES
+  (1, 'Club', '10/04/2021', '5:00 pm')
+  (2, 'Middle School', '10/10/2021', '7:00 pm')
+  (3, 'High School', '10/12/2021', '8:00 pm')
+
