@@ -11,10 +11,10 @@ $vars = [];
 $stmt = $db->prepare($sql);
 $stmt->execute($vars);
 
-$book = $stmt->fetchAll();
+$assignment = $stmt->fetchAll();
 
 // Step 3: Convert to JSON
-$json = json_encode($book, JSON_PRETTY_PRINT);
+$json = json_encode($assignment, JSON_PRETTY_PRINT);
 
 // Step 4: Output
 header('Content-Type: application/json');
