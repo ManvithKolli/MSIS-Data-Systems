@@ -14,7 +14,7 @@ const App = {
             .then( response => response.json() )
             .then( (responseJson) => {
                 console.log(responseJson);
-                this.referee = responseJson.results[0];
+                this.referee = responseJson;
             })
             .catch( (err) => {
                 console.error(err);
