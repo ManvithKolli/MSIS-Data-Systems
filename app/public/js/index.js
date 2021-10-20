@@ -10,7 +10,7 @@ const App = {
     },
     methods: {
         fetchRefereeData() {
-            fetch('/api/referees')
+            fetch('/api/referees/')
             .then( response => response.json() )
             .then( (responseJson) => {
                 console.log(responseJson);
