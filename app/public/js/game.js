@@ -1,4 +1,4 @@
-const App = {
+const Game = {
     data() {
       return {
 
@@ -26,4 +26,4 @@ const App = {
     } 
 } 
   
-Vue.createApp(App).mount('#App');
+Vue.createApp(Game).mount('#Game');
