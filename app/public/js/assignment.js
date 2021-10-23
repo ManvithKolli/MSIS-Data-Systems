@@ -1,4 +1,4 @@
-const App = {
+const Assignment = {
     data() {
       return {
 
@@ -10,7 +10,7 @@ const App = {
     },
     methods: {
         fetchAssignmentData() {
-            fetch('/api/referees/')
+            fetch('/api/assignment/')
             .then( response => response.json() )
             .then( (responseJson) => {
                 console.log(responseJson);
@@ -26,4 +26,4 @@ const App = {
     } 
 } 
   
-Vue.createApp(App).mount('#App');
+Vue.createApp(Assignment).mount('#assignment');
