@@ -59,14 +59,14 @@
       <table class="table table-dark table-striped">
        <thead>
           <tr>
+            <th scope="col">Assignment ID</th>
+            <th scope="col">Referee ID</th>
             <th scope="col">Game Number</th>
-            <th scope="col">Game Type</th>
-            <th scope="col">Game Day</th>
-            <th scope="col">Game Time</th>
+            <th scope="col">Assignment Status</th>
           </tr>
        </thead>
        <tbody>
-         <tr v-for="game in game">
+         <tr v-for="assignment in assignment">
            <td>{{ assignment.assignment_id }}</td>
            <td>{{ assignment.referee_id }}</td>
            <td>{{ assignment.game_number }}</td>
