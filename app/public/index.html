@@ -71,6 +71,11 @@
            <td>{{ assignment.referee_id }}</td>
            <td>{{ assignment.game_number }}</td>
            <td>{{ assignment.referee_assign_status }}</td>
+           <td>
+            <button type="button" v-on:click="handleEditOffer(offer)" class="btn btn-outline-secondary btn-sm">Edit</button>
+            <button type="button" v-on:click="postDeleteOffer(offer)" class="btn btn-outline-secondary btn-sm">Delete</button>
+
+          </td>
          </tr>
        </tbody>
       </table>
