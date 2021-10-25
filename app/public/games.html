@@ -66,35 +66,35 @@
         <td>{{ game.game_day }}</td>
         <td>{{ game.game_time }}</td>
         <td>
-          <button type="button" v-on:click="handleEditOffer(offer)" class="btn btn-outline-secondary btn-sm">Edit</button>
-          <button type="button" v-on:click="postDeleteOffer(offer)" class="btn btn-outline-secondary btn-sm">Delete</button>
+          <button type="button" v-on:click="handleEditGame(game)" class="btn btn-outline-secondary btn-sm">Edit</button>
+          <button type="button" v-on:click="postDeleteGame(game)" class="btn btn-outline-secondary btn-sm">Delete</button>
 
         </td>
       </tr>
     </tbody>
    </table>
-   <h3>{{ selectedOffer === null ? "Add " : "Edit " }} Offer</h3>
-            <form v-on:submit.prevent="postOffer">
+   <h3>{{ selectedGame === null ? "Add " : "Edit " }} Game</h3>
+            <form v-on:submit.prevent="postGame">
               <div class="mb-3">
                 <label for="game_number" class="form-label">Game Number</label>
-                <input type="text" v-model="offerForm.companyName"
-                 class="form-control" id="companyName">
+                <input type="number" v-model="gameForm.game_number"
+                 class="form-control" id="game_number">
               </div>
               <div class="mb-3">
                 <label for="game_type" class="form-label">Game Type</label>
-                <input type="number" v-model="offerForm.salary" class="form-control" id="salary">
+                <input type="text" v-model="gameForm.game_type" class="form-control" id="game_type">
               </div>
               <div class="mb-3">
                 <label for="game_day" class="form-label">Game Day</label>
-                <input type="number" v-model="offerForm.bonus" class="form-control" id="bonus">
+                <input type="text" v-model="gameForm.game_day" class="form-control" id="game_day">
               </div>
               <div class="mb-3">
                 <label for="Game Time" class="form-label">game_time</label>
-                <input type="date" v-model="offerForm.offerDate" class="form-control" id="offerDate">
+                <input type="text" v-model="gameForm.game_time" class="form-control" id="game_time">
               </div>
-              <button type="submit" class="btn btn-primary">{{ selectedOffer === null ? "Add " : "Edit " }} Offer</button>
+              <button type="submit" class="btn btn-primary">{{ selectedGame === null ? "Add " : "Edit " }} Game</button>
               <button type="button" class="btn btn-outline-secondary" 
-                 v-if="selectedOffer"
+                 v-if="selectedGame"
                  v-on:click="handleResetEdit">Cancel Edit</button>
             </form>
   </div>
