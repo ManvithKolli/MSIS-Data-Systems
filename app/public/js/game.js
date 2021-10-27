@@ -2,7 +2,7 @@ const Game = {
     data() {
       return {
 
-        "game":[],
+        game :[],
         gameForm: {},
         selectedGame: null
       }
