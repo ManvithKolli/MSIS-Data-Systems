@@ -40,6 +40,6 @@ a:active {
   color: whitesmoke;
 }
 
-#GameNum {
+label.form-label{
   color: white;
 }
