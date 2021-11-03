@@ -55,7 +55,7 @@ table[data-sortable] th[data-sorted-direction="ascending"]:after {
 
 /* line 5, ../sass/sortable-theme-light.sass */
 table[data-sortable].sortable-theme-light {
-  color: red;
+  color: whitesmoke;
   background: #f2f2f2;
 }
 /* line 9, ../sass/sortable-theme-light.sass */
